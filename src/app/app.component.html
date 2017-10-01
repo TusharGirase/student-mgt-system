@@ -1,18 +1,13 @@
 <nav class="navbar navbar-default">
   <div class="container-fluid">
     <div class="navbar-header">
-      <a class="navbar-brand" href="#">StudentMgtSystem</a>
+      <a class="navbar-brand" routerLink="/home" routerLinkActive="active">StudentMgtSystem</a>
     </div>
     <ul class="nav navbar-nav">
-      <li class="active"><a href="#">Home</a></li>
-      <li><a href="#">All Records</a></li>
+      <li class="active"> <a routerLink="/home" routerLinkActive="active">Home</a>
+      </li>
+      <li><a routerLink="/students" routerLinkActive="active">Students</a></li>
     </ul>
   </div>
 </nav>
-
-<div class="container">
-  <div class="jumbotron">
-    <h1>Angular 4 Tutorial.</h1>
-    <p>This application is created using Angular 4 by Tushar Girase.</p>
-  </div>
-</div>
+<router-outlet></router-outlet>

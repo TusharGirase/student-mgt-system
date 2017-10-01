@@ -1,0 +1,20 @@
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <th>Roll</th>
+      <th>Name</th>
+      <th>Class</th>
+      <th>Gender</th>
+      <th>Details/Edit</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let stud of students">
+      <td>{{stud.roll}}</td>
+      <td>{{stud.name}}</td>
+      <td>{{stud.claz}}</td>
+      <td>{{stud.gender}}</td>
+      <td><button class="btn btn-primary" (click)="onSelect(stud)">Edit</button></td>
+    </tr>
+  </tbody>
+</table>

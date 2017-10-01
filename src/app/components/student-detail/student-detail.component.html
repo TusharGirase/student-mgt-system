@@ -1,0 +1,21 @@
+<div *ngIf="student">
+  <h2>{{student.name}} details!</h2>
+  <div class="form-group">
+    <label>Roll: </label>{{student.roll}}
+  </div>
+  <div class="form-group">
+    <label for="studName"> Name: </label>
+    <input class="form-control" [(ngModel)]="student.name" is="studName" placeholder="name" />
+  </div>
+  <div class="form-group">
+    <label for="studClass"> Class: </label>
+    <input class="form-control" [(ngModel)]="student.claz" is="studClass" placeholder="class" />
+  </div>
+  <div class="form-group">
+    <label for="studGender"> Gender: </label>
+    <input class="form-control" [(ngModel)]="student.gender" is="studGender" placeholder="gender" />
+  </div>
+  <div class="form-group">
+    <button (click)="goBack()">Back</button>
+  </div>
+</div>
